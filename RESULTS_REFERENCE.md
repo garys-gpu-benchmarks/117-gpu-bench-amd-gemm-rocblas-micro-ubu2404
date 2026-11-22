@@ -11,9 +11,9 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T11:08:01Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 04:18 · benchmark 00:06 · whole run 04:37
-- **Source:** run 117_20261122_110801
+- **Run:** 2026-11-22T14:37:49Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 04:19 · benchmark 00:06 · whole run 04:38
+- **Source:** run 117_20261122_143749
 - **Command:** `bash run_benchmark.sh --smoke --dtype f32_r --M 64 --N 64 --K 64 --transposeA N --transposeB N --alpha 1 --beta 0 --lda 64 --ldb 64 --ldc 64 --batch-count 1 --warmup-iters 2 --num-iterations 2 --norm-check 1`
 
 | # | Metric | Result |
@@ -21,6 +21,6 @@ Reference results from the validation run on the system shown in each section (r
 | 1 | Achieved compute throughput, TFLOP/s (achieved_compute_tflops) | 0.04369066666666666 |
 | 2 | Kernel execution time (kernel_time_msec) | 0.012 |
 | 3 | Minimum operand traffic, GB/s (minimum_operand_traffic_gb_s) | 4.096 |
-| 4 | Relative L1 of checked columns (relative_l1_checked_columns) | 1.37354e-07 |
+| 4 | Relative L1 of checked columns (relative_l1_checked_columns) | 1.58488e-07 |
 | 5 | CPU reference GFLOPS (cpu_gflops) | 43.6907 |
 <!-- /profile:smoke -->
